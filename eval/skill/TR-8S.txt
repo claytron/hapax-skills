@@ -1,0 +1,162 @@
+VERSION 1
+TRACKNAME TR-8S
+TYPE DRUM
+OUTPORT NULL
+OUTCHAN NULL
+INPORT NULL
+INCHAN NULL
+
+[DRUMLANES]
+1:NULL:NULL:36 BD
+2:NULL:NULL:38 SD
+3:NULL:NULL:43 LT
+4:NULL:NULL:47 MT
+5:NULL:NULL:50 HT
+6:NULL:NULL:37 RS
+7:NULL:NULL:39 HC
+8:NULL:NULL:42 CH
+9:NULL:NULL:46 OH
+10:NULL:NULL:49 CC
+11:NULL:NULL:51 RC
+[/DRUMLANES]
+
+[CC]
+# Global
+9 Shuffle
+12 Ext In Level
+71 Accent
+# Effects
+15 Master FX On
+19 Master FX Ctrl
+16 Dly Level
+17 Dly Time
+18 Dly Feedback
+91 Rev Level
+# BD
+20 BD Tune
+23 BD Decay
+24 BD Level
+96 BD Ctrl
+# SD
+25 SD Tune
+28 SD Decay
+29 SD Level
+97 SD Ctrl
+# LT
+46 LT Tune
+47 LT Decay
+48 LT Level
+102 LT Ctrl
+# MT
+49 MT Tune
+50 MT Decay
+51 MT Level
+103 MT Ctrl
+# HT
+52 HT Tune
+53 HT Decay
+54 HT Level
+104 HT Ctrl
+# RS
+55 RS Tune
+56 RS Decay
+57 RS Level
+105 RS Ctrl
+# HC
+58 HC Tune
+59 HC Decay
+60 HC Level
+106 HC Ctrl
+# CH
+61 CH Tune
+62 CH Decay
+63 CH Level
+107 CH Ctrl
+# OH
+80 OH Tune
+81 OH Decay
+82 OH Level
+108 OH Ctrl
+# CC
+83 CC Tune
+84 CC Decay
+85 CC Level
+109 CC Ctrl
+# RC
+86 RC Tune
+87 RC Decay
+88 RC Level
+110 RC Ctrl
+[/CC]
+
+[ASSIGN]
+1 CC:20
+2 CC:23
+3 CC:25
+4 CC:28
+5 CC:62
+6 CC:81
+7 CC:19
+8 CC:91
+[/ASSIGN]
+
+[AUTOMATION]
+CC:9
+CC:12
+CC:71
+CC:15
+CC:19
+CC:16
+CC:17
+CC:18
+CC:91
+CC:20
+CC:23
+CC:24
+CC:96
+CC:25
+CC:28
+CC:29
+CC:97
+CC:46
+CC:47
+CC:48
+CC:102
+CC:49
+CC:50
+CC:51
+CC:103
+CC:52
+CC:53
+CC:54
+CC:104
+CC:55
+CC:56
+CC:57
+CC:105
+CC:58
+CC:59
+CC:60
+CC:106
+CC:61
+CC:62
+CC:63
+CC:107
+CC:80
+CC:81
+CC:82
+CC:108
+CC:83
+CC:84
+CC:85
+CC:109
+CC:86
+CC:87
+CC:88
+CC:110
+[/AUTOMATION]
+
+[COMMENT]
+Roland TR-8S
+Source: TR-8S Reference Manual, version 3.00, MIDI Implementation Chart v1.10
+[/COMMENT]

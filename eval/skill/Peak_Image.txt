@@ -1,0 +1,114 @@
+VERSION 1
+TRACKNAME Peak
+TYPE POLY
+OUTPORT NULL
+OUTCHAN NULL
+INPORT NULL
+INCHAN NULL
+
+[CC]
+# Voice
+5:DEFAULT=0 Glide Time
+35:DEFAULT=0 Glide On
+# Oscillator 1
+3:DEFAULT=64 Osc1 Range
+9:DEFAULT=64 Osc1 Env2>Pitch
+12:DEFAULT=64 Osc1 Shape
+119:DEFAULT=64 Osc1 Env1>Shape
+33:DEFAULT=64 Osc1 LFO1>Shape
+34:DEFAULT=0 Osc1 Vsync
+# Oscillator 2
+37:DEFAULT=64 Osc2 Range
+38:DEFAULT=64 Osc2 Env2>Pitch
+39:DEFAULT=64 Osc2 Shape
+40:DEFAULT=64 Osc2 Env1>Shape
+41:DEFAULT=64 Osc2 LFO1>Shape
+42:DEFAULT=0 Osc2 Vsync
+[/CC]
+
+[CC_PAIR]
+# Oscillator 1
+14:46 Osc1 Coarse
+15:47 Osc1 Fine
+16:48 Osc1 LFO2>Pitch
+# Oscillator 2
+17:49 Osc2 Coarse
+18:50 Osc2 Fine
+19:51 Osc2 LFO2>Pitch
+[/CC_PAIR]
+
+[NRPN]
+# Patch
+0:0:7:DEFAULT=0 Patch Category
+0:1:7:DEFAULT=0 Patch Genre
+# Voice
+0:2:7:DEFAULT=3 Voice Mode
+0:3:7:DEFAULT=0 Voice Unison
+0:4:7:DEFAULT=25 Unison Detune
+0:5:7:DEFAULT=0 Unison Spread
+0:6:7:DEFAULT=64 Kbd Octave
+0:7:7:DEFAULT=64 Pre-Glide
+# Oscillator common
+0:9:7:DEFAULT=0 Osc Divergence
+0:10:7:DEFAULT=0 Osc Drift
+0:11:7:DEFAULT=127 Noise LPF
+0:12:7 Noise HPF
+# Oscillator 1
+0:14:7:DEFAULT=0 Osc1 Wave
+0:15:7 Osc1 Wave More
+0:16:7:DEFAULT=0 Osc1 Shape Src
+0:17:7:DEFAULT=0 Osc1 Saw Dens
+0:18:7:DEFAULT=0 Osc1 SawDensDet
+0:19:7:DEFAULT=0 Osc1 Fixed Note
+0:20:7:DEFAULT=76 Osc1 Bend Range
+# Oscillator 2
+0:23:7:DEFAULT=0 Osc2 Wave
+0:24:7:DEFAULT=4 Osc2 Wave More
+0:25:7:DEFAULT=0 Osc2 Shape Src
+0:26:7:DEFAULT=0 Osc2 Saw Dens
+[/NRPN]
+
+[ASSIGN]
+1 CC:12
+2 CC:39
+3 CC:34
+4 CC:42
+5 CC:33
+6 CC:41
+7 CC:119
+8 CC:5
+[/ASSIGN]
+
+[AUTOMATION]
+CC:5
+NRPN:0:4:7
+NRPN:0:5:7
+NRPN:0:9:7
+NRPN:0:10:7
+NRPN:0:11:7
+NRPN:0:12:7
+CC_PAIR:14:46
+CC_PAIR:15:47
+CC:9
+CC_PAIR:16:48
+CC:12
+CC:119
+CC:33
+CC:34
+NRPN:0:17:7
+NRPN:0:18:7
+CC_PAIR:17:49
+CC_PAIR:18:50
+CC:38
+CC_PAIR:19:51
+CC:39
+CC:40
+CC:41
+CC:42
+NRPN:0:26:7
+[/AUTOMATION]
+
+[COMMENT]
+Novation Peak
+Source: Novation Peak user guide, MIDI parameters list, page 40
+[/COMMENT]

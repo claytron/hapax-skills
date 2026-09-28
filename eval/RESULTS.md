@@ -59,3 +59,40 @@ eval/baseline/TR-8S.txt  3 errors
 - `[AUTOMATION]` left empty.
 - Empty sections written out (`[PC]`, `[NRPN]`, `[AUTOMATION]`).
 - Correct: transmit-only CC 14 and 70 skipped; `TYPE DRUM`; `ROW:NULL:NULL:NOTE`; pots on continuous controls.
+
+## With the skill
+
+Run 2026-09-28, same prompts, general-purpose subagents told to follow `hapax-instrument/SKILL.md`.
+Peak ran with `hapax` on PATH; TR-8S was told it was not installed (self-check path).
+
+### Peak
+
+```text
+eval/skill/Novation_Peak.txt  OK
+
+1 file, 0 errors, 0 warnings — Hapax OS 3.21
+```
+
+- Fixed: no rejected characters; no names over 15 characters; 14-bit pairs in `[CC_PAIR]` (16), pots 1, 5, 6 on `CC_PAIR:`; all 16 mod matrix slots kept; ports `NULL`; defaults only where the chart states `64 (0)`.
+- Spot check of 20 entries (every tenth CC, CC pair and NRPN) against pp. 40–43: all match.
+- `[AUTOMATION]`: exactly 64, continuous parameters; dropped groups (coarse/fine pitch, drift, key tracking, LFO sync/fade/slew, mod matrix depths) named in the report.
+- Pots: cutoff, resonance, env amount, osc shape, LFO1 rate, LFO1>filter, reverb level, amp release — all continuous.
+- `TYPE POLYAT`: the manual documents receiving polyphonic aftertouch (p. 34). On 3.10 this is 1 error plus 33 `default.ignored` warnings; expected for a 3.21 target, and SKILL.md step 5 asks the OS when POLYAT is involved.
+- No duplicate names within 15 characters; no `[PC]` (manual lists no patch names).
+
+### TR-8S
+
+```text
+eval/skill/TR-8S.txt  OK
+
+1 file, 0 errors, 0 warnings — Hapax OS 3.21
+```
+
+- Fixed: no invented directives; no rejected characters; 11 drum lanes in panel order (rows 9–11, 3.10+); 53 automation lanes; empty sections left out.
+- Recognized-only: CC 14 and 70 skipped.
+- Self-check path: report says the file was checked by hand and suggests hapax-tui.
+- Also clean on 3.10.
+
+### Image-only chart
+
+Pass: `Peak_Image.txt` built from `peak-chart.png` (one page), 0 errors, 0 warnings; the report says the page ends at "(Continues...)" and more pages are needed.
