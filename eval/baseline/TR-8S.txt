@@ -1,0 +1,105 @@
+VERSION 1
+TRACKNAME TR-8S
+TYPE DRUM
+OUTPORT NULL
+OUTCHAN 10
+INPORT NULL
+INCHAN NULL
+DEFAULT_NOTE NULL
+DEFAULT_PATTERN NULL
+
+[DRUMLANES]
+1:NULL:NULL:36 BD
+2:NULL:NULL:38 SD
+3:NULL:NULL:43 LT
+4:NULL:NULL:50 HT
+5:NULL:NULL:37 RS
+6:NULL:NULL:39 HC
+7:NULL:NULL:42 CH
+8:NULL:NULL:46 OH
+[/DRUMLANES]
+
+[PC]
+[/PC]
+
+[CC]
+9 Shuffle
+12 Ext In Level
+15 Master FX On
+16 Delay Level
+17 Delay Time
+18 Delay Feedback
+19 Master FX Ctrl
+20 BD Tune
+23 BD Decay
+24 BD Level
+25 SD Tune
+28 SD Decay
+29 SD Level
+46 LT Tune
+47 LT Decay
+48 LT Level
+49 MT Tune
+50 MT Decay
+51 MT Level
+52 HT Tune
+53 HT Decay
+54 HT Level
+55 RS Tune
+56 RS Decay
+57 RS Level
+58 HC Tune
+59 HC Decay
+60 HC Level
+61 CH Tune
+62 CH Decay
+63 CH Level
+71 Accent
+80 OH Tune
+81 OH Decay
+82 OH Level
+83 CC Tune
+84 CC Decay
+85 CC Level
+86 RC Tune
+87 RC Decay
+88 RC Level
+91 Reverb Level
+96 BD Ctrl
+97 SD Ctrl
+102 LT Ctrl
+103 MT Ctrl
+104 HT Ctrl
+105 RS Ctrl
+106 HC Ctrl
+107 CH Ctrl
+108 OH Ctrl
+109 CC Ctrl
+110 RC Ctrl
+[/CC]
+
+[NRPN]
+[/NRPN]
+
+[ASSIGN]
+1 CC:71
+2 CC:16
+3 CC:17
+4 CC:18
+5 CC:91
+6 CC:19
+7 CC:9
+8 CC:12
+[/ASSIGN]
+
+[AUTOMATION]
+[/AUTOMATION]
+
+[COMMENT]
+Roland TR-8S (Version 1.10 MIDI chart / manual v3.00). Default channel 10 (UTILITY:MIDI:Pattern Ch).
+Hapax allows 8 drum lanes; TR-8S has 11 instruments. Omitted: MT 47, CC 49, RC 51.
+Alt notes: BD 35, SD 40, LT 41, MT 45, HT 48, RS 56, HC 54, CH 44, OH 55, CC 61, RC 63.
+Note numbers are configurable on UTILITY:MIDI:Inst Note.
+PC 0-127 selects kits on Kit Ch (Rx Prog Chg must be ON).
+CC 14 and 70 (Auto Fill In) are transmit-only and not listed.
+[/COMMENT]

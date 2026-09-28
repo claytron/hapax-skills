@@ -1,0 +1,276 @@
+VERSION 1
+TRACKNAME Peak
+TYPE POLY
+OUTPORT A
+OUTCHAN 1
+INPORT NULL
+INCHAN NULL
+MAXRATE NULL
+
+# Novation Peak - source: Peak User Guide, "MIDI parameters list" (pp. 40-43)
+# Peak defaults to MIDI channel 1 with CC/NRPN set to Rec+Tran (Menu page 5).
+
+[CC]
+1 Mod Wheel
+3 Osc1 Range
+5 Glide Time
+9 Osc1 ModEnv2>Pitch
+12 Osc1 Shape
+14 Osc1 Coarse
+15 Osc1 Fine
+16 Osc1 LFO2>Pitch
+17 Osc2 Coarse
+18 Osc2 Fine
+19 Osc2 LFO2>Pitch
+20 Osc3 Coarse
+21 Osc3 Fine
+22 Osc3 LFO2>Pitch
+23 Mix Osc1
+24 Mix Osc2
+25 Mix Osc3
+26 Mix Ring 1*2
+27 Mix Noise
+28 Filt LFO1 Depth
+29 Filter Freq
+30 LFO1 Rate
+31 LFO2 Rate
+33 Osc1 LFO1>Shape
+34 Osc1 VSync
+35 Glide On
+36 Filt Post Drive
+37 Osc2 Range
+38 Osc2 ModEnv2>Pitch
+39 Osc2 Shape
+40 Osc2 ModEnv1>Shape
+41 Osc2 LFO1>Shape
+42 Osc2 VSync
+43 Osc3 ModEnv2>Pitch
+44 Osc3 VSync
+65 Osc3 Range
+71 Osc3 Shape
+72 Osc3 ModEnv1>Shape
+73 Osc3 LFO1>Shape
+75 Filt Key Track
+76 Filt Osc3 Depth
+77 Filt AmpEnv Depth
+78 Filt ModEnv1 Depth
+79 Filter Reso
+80 Filt Overdrive
+81 LFO1 Sync Rate
+82 LFO1 Fade Time
+83 LFO2 Range
+84 LFO2 Sync Rate
+85 LFO2 Fade Time
+86 Amp Attack
+87 Amp Decay
+88 Amp Sustain
+89 Amp Release
+90 ModEnv1 Attack
+91 ModEnv1 Decay
+92 ModEnv1 Sustain
+93 ModEnv1 Release
+94 ModEnv2 Attack
+95 ModEnv2 Decay
+103 ModEnv2 Release
+104 Distortion Lvl
+105 Chorus Level
+107 Chorus Feedback
+108 Delay Level
+109 Delay Time
+110 Delay Feedback
+112 Reverb Level
+113 Reverb Time
+114 Animate 1 Hold
+115 Animate 2 Hold
+116 Arp Gate
+117 ModEnv2 Sustain
+118 Chorus Rate
+119 Osc1 ModEnv1>Shape
+[/CC]
+
+# MSB:LSB:DEPTH NAME - all Peak NRPN values are 7-bit
+[NRPN]
+0:2:7 Voice Mode
+0:3:7 Unison
+0:4:7 Unison Detune
+0:5:7 Unison Spread
+0:6:7 Kbd Octave
+0:7:7 Pre-Glide
+0:9:7 Osc Divergence
+0:10:7 Osc Drift
+0:11:7 Noise LPF
+0:12:7 Noise HPF
+0:14:7 Osc1 Wave
+0:15:7 Osc1 Wave More
+0:16:7 Osc1 Shape Src
+0:17:7 Osc1 Saw Density
+0:18:7 Osc1 Dens Detune
+0:19:7 Osc1 Fixed Note
+0:20:7 Osc1 Bend Range
+0:23:7 Osc2 Wave
+0:24:7 Osc2 Wave More
+0:25:7 Osc2 Shape Src
+0:26:7 Osc2 Saw Density
+0:27:7 Osc2 Dens Detune
+0:28:7 Osc2 Fixed Note
+0:29:7 Osc2 Bend Range
+0:32:7 Osc3 Wave
+0:33:7 Osc3 Wave More
+0:34:7 Osc3 Shape Src
+0:35:7 Osc3 Saw Density
+0:36:7 Osc3 Dens Detune
+0:37:7 Osc3 Fixed Note
+0:38:7 Osc3 Bend Range
+0:41:7 Patch Level
+0:42:7 VCA Gain
+0:43:7 Dry Level
+0:44:7 Wet Level
+0:45:7 Filter Slope
+0:46:7 Filter Shape
+0:47:7 Filter Env Sel
+0:48:7 Filt Divergence
+0:55:7 Amp Velocity
+0:56:7 Amp Trigger
+0:59:7 ModEnv Select
+0:60:7 ModEnv1 Velocity
+0:61:7 ModEnv1 Trigger
+0:64:7 ModEnv2 Velocity
+0:65:7 ModEnv2 Trigger
+0:68:7 LFO1 Range
+0:69:7 LFO1 Wave
+0:70:7 LFO1 Phase
+0:71:7 LFO1 Slew
+0:72:7 LFO1 Fade In/Out
+0:75:7 LFO1 One Shot
+0:76:7 LFO1 Common
+0:78:7 LFO2 Wave
+0:79:7 LFO2 Phase
+0:80:7 LFO2 Slew
+0:81:7 LFO2 Fade In/Out
+0:84:7 LFO2 One Shot
+0:85:7 LFO2 Common
+0:88:7 FX Bypass
+0:89:7 FX Routing
+0:92:7 Delay Width
+0:93:7 Delay Sync
+0:94:7 Delay Sync Time
+0:95:7 Delay LP Damp
+0:96:7 Delay HP Damp
+0:97:7 Delay Slew
+0:101:7 Reverb Type
+0:102:7 Reverb LP Damp
+0:103:7 Reverb HP Damp
+0:104:7 Reverb Size
+0:105:7 Reverb Mod
+0:106:7 Reverb Mod Rate
+0:107:7 Reverb Low Pass
+0:108:7 Reverb High Pass
+0:109:7 Reverb PreDelay
+0:111:7 Chorus Type
+0:112:7 Chorus Depth
+0:113:7 Chorus LP
+0:114:7 Chorus HP
+0:116:7 Arp Sync Rate
+0:117:7 Arp Type
+0:118:7 Arp Rhythm
+0:119:7 Arp Octave
+0:120:7 Arp Swing
+0:121:7 Arp On
+0:122:7 Arp Key Latch
+0:123:7 Arp Key Sync
+0:125:7 ModMatrix Select
+1:0:7 MM1 Src A
+1:1:7 MM1 Src B
+1:2:7 MM1 Depth
+1:3:7 MM1 Dest
+2:0:7 MM2 Src A
+2:1:7 MM2 Src B
+2:2:7 MM2 Depth
+2:3:7 MM2 Dest
+3:0:7 MM3 Src A
+3:1:7 MM3 Src B
+3:2:7 MM3 Depth
+3:3:7 MM3 Dest
+4:0:7 MM4 Src A
+4:1:7 MM4 Src B
+4:2:7 MM4 Depth
+4:3:7 MM4 Dest
+5:0:7 MM5 Src A
+5:1:7 MM5 Src B
+5:2:7 MM5 Depth
+5:3:7 MM5 Dest
+6:0:7 MM6 Src A
+6:1:7 MM6 Src B
+6:2:7 MM6 Depth
+6:3:7 MM6 Dest
+7:0:7 MM7 Src A
+7:1:7 MM7 Src B
+7:2:7 MM7 Depth
+7:3:7 MM7 Dest
+8:0:7 MM8 Src A
+8:1:7 MM8 Src B
+8:2:7 MM8 Depth
+8:3:7 MM8 Dest
+[/NRPN]
+
+[ASSIGN]
+1 CC:29
+2 CC:79
+3 CC:80
+4 CC:78
+5 CC:86
+6 CC:87
+7 CC:89
+8 CC:104
+[/ASSIGN]
+
+[AUTOMATION]
+PB
+AT
+CC:1
+CC:29
+CC:79
+CC:80
+CC:36
+CC:78
+CC:77
+CC:28
+CC:12
+CC:39
+CC:71
+CC:34
+CC:42
+CC:44
+CC:23
+CC:24
+CC:25
+CC:26
+CC:27
+CC:30
+CC:31
+CC:86
+CC:87
+CC:88
+CC:89
+CC:90
+CC:91
+CC:92
+CC:93
+CC:104
+CC:105
+CC:108
+CC:109
+CC:110
+CC:112
+CC:113
+CC:114
+CC:115
+[/AUTOMATION]
+
+[COMMENT]
+Novation Peak, 8-voice polysynth. Set Peak MIDI channel (MidiChan, Menu page 5) to match OUTCHAN, and CC/NRPN to Receive or Rec+Tran.
+Peak uses 14-bit CC pairs (MSB/LSB = CC n / n+32) for osc coarse/fine/LFO2>pitch, mixer levels, filter freq, LFO1>filter and LFO1/2 rate; only the MSB is defined here, giving 7-bit resolution.
+Bipolar CCs (shape amounts, env depths, osc tuning) are centred at 64.
+Mod Matrix slots 9-16 (NRPN 9:0 to 16:3) omitted to keep the list manageable. Patch category/genre (NRPN 0:0, 0:1) omitted.
+Arp clock rate has no MIDI control; sync Peak to Hapax MIDI clock instead.
+[/COMMENT]
