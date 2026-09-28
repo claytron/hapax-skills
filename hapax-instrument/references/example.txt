@@ -1,0 +1,81 @@
+VERSION 1
+TRACKNAME Matriarch
+TYPE POLY
+OUTPORT NULL
+OUTCHAN NULL
+INPORT NULL
+INCHAN NULL
+
+[CC]
+# Performance
+1 Mod Wheel
+3 Mod Rate
+64 Sustain
+65 Glide On
+5 Glide Time
+85 Glide Type
+86 Gated Glide
+# Voice
+94 Para Mode
+95 Multi-Trig
+90 Sq LFO Polarity
+# Oscillators
+74 Osc1 Octave
+75 Osc2 Octave
+76 Osc3 Octave
+77 Osc4 Octave
+16 Osc2 Freq
+17 Osc3 Freq
+18 Osc4 Freq
+80 Hard Sync
+81 Osc2 Sync
+82 Osc3 Sync
+83 Osc4 Sync
+# Noise
+9 Noise Cutoff
+# Arpeggiator
+73 Arp Play
+69 Arp Latch
+8 Arp Rate
+14 Arp Swing
+15 Arp Gate
+91 Arp Mode
+92 Arp Pattern
+93 Arp Range
+# Delay
+12 Dly Time
+13 Dly Spacing
+88 Dly Ping Pong
+89 Dly Sync
+[/CC]
+
+[ASSIGN]
+1 CC:16
+2 CC:17
+3 CC:18
+4 CC:5
+5 CC:3
+6 CC:9
+7 CC:12
+8 CC:13
+[/ASSIGN]
+
+[AUTOMATION]
+CC:1
+CC:3
+CC:5
+CC:16
+CC:17
+CC:18
+CC:9
+CC:8
+CC:14
+CC:15
+CC:12
+CC:13
+[/AUTOMATION]
+
+[COMMENT]
+Moog Matriarch
+Source: Moog Matriarch user manual, MIDI CC chart
+[/COMMENT]
