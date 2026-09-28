@@ -33,6 +33,8 @@ Any other directive is an error.
 
 Allowed: `A–Z a–z 0–9`, space, `_ - + ! " $ ' ( ) * , . / : < = > ? @`.
 Rejected: ``% & ; [ \ ] ^ ` { | } ~`` and anything non-ASCII (`é`, `°`, `→`, curly quotes, en dashes).
+`#` starts a comment even inside a name: `Tom #2` loads silently as `Tom`, and `#2 Tom` leaves no name and rejects the file.
+Never use `#` in a name or `[COMMENT]` line.
 A name is required on every `[CC]`, `[PC]`, `[NRPN]`, `[CC_PAIR]` and `[DRUMLANES]` entry.
 Names of any length load, but only the first 15 characters are shown; keep every name within 15 and unique within 15.
 `[COMMENT]` lines use the same character set, with no length limit.
@@ -101,7 +103,7 @@ When `hapax` is not installed, check every line of the file against this list be
 
 1. Every directive is from the table above, with a listed value.
 2. Every section that opens also closes, with the same name.
-3. Every name and `[COMMENT]` line uses only allowed characters — look for accents, degree signs, curly quotes, `&`, `%`, `;`, `[`, `]`.
+3. Every name and `[COMMENT]` line uses only allowed characters — look for accents, degree signs, curly quotes, `#`, `&`, `%`, `;`, `[`, `]`.
 4. Every name is at most 15 characters, and no two names in a section share their first 15.
 5. `TRACKNAME` is at most 9 characters, or you accept that it will be cut.
 6. `[CC]`: 0–127, each CC once; no `DEFAULT=NULL`.

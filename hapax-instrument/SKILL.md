@@ -54,6 +54,8 @@ Fix every error and every warning you did not choose, then run it again, until i
 
 Otherwise, go through "Self-check" in `format.md` one item at a time against the file, and fix what fails.
 
+Either way, check Self-check item 4 yourself: `hapax` does not compare names, so two entries that read the same in their first 15 characters pass validation.
+
 ### 8. Report
 
 A few lines:

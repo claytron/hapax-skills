@@ -24,7 +24,7 @@ When the manual does not settle a choice, pick the sensible option and say so in
 - Abbreviations: `Osc`, `Flt`, `Env`, `LFO`, `Amp`, `Mod`, `Dly`, `Rev`, `Dist`, `Arp`, `Seq`; `Atk`, `Dec`, `Sus`, `Rel`; `Amt`, `Lvl`, `Freq`, `Reso`, `Fine`, `Crs`, `Pos`, `Depth`, `Rate`, `Sync`, `Mix`.
 - Drop words the prefix already implies (`Filter Frequency` in a filter group → `Flt Cutoff`).
 - When two names still collide in 15 characters, shorten the part that differs last (`Osc1 WavePos`, `Osc1 WavePosMod`).
-- Replace characters the Hapax rejects: `&` → `+` or `and`, `°` → `deg`, accented letters → plain ones.
+- Replace characters the Hapax rejects or cuts: `#` → `No` (`Tom No2`) or drop it, `&` → `+` or `and`, `°` → `deg`, accented letters → plain ones.
 
 ## Directives
 
