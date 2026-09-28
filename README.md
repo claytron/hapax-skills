@@ -12,7 +12,7 @@ It targets Hapax OS 3.21 unless you tell it otherwise.
 Clone the repository once; every install below points at the clone, so `git pull` updates the skill.
 
 ```sh
-git clone https://github.com/clayton/hapax-skills.git ~/src/hapax-skills
+git clone https://github.com/claytron/hapax-skills.git ~/src/hapax-skills
 ```
 
 **Claude Code** — link the skill into your personal skills folder, then restart Claude Code:
@@ -46,5 +46,5 @@ git -C ~/src/hapax-skills pull
 
 ### Validating
 
-The skill checks its output by hand unless the `hapax` command from [hapax-tui](https://github.com/clayton/hapax-tui) is installed, in which case it validates against the real rules and fixes what it finds.
+The skill checks its output by hand unless the `hapax` command from [hapax-tui](https://github.com/claytron/hapax-tui) is installed, in which case it validates against the real rules and fixes what it finds.
 hapax-tui also edits definitions in the terminal.
