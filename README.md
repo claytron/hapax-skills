@@ -9,7 +9,13 @@ It targets Hapax OS 3.21 unless you tell it otherwise.
 
 ### Install
 
-Clone the repository once; every install below points at the clone, so `git pull` updates the skill.
+**Quick install** — with Node.js installed, the [skills](https://github.com/vercel-labs/skills) CLI installs it into Claude Code and other agents:
+
+```sh
+npx skills add claytron/hapax-skills
+```
+
+**From a clone** — clone the repository once; every install below points at the clone, so `git pull` updates the skill.
 
 ```sh
 git clone https://github.com/claytron/hapax-skills.git ~/src/hapax-skills
@@ -35,6 +41,14 @@ Uploads are copies: after `git pull`, zip and upload again to update.
 **Other Agent Skills hosts** — install the `hapax-instrument/` folder as a skill; it is a standard `SKILL.md` with a `references/` folder and needs no scripts or dependencies.
 
 ### Update
+
+Quick install:
+
+```sh
+npx skills update hapax-instrument
+```
+
+From a clone:
 
 ```sh
 git -C ~/src/hapax-skills pull
