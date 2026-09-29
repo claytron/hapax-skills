@@ -46,5 +46,4 @@ git -C ~/src/hapax-skills pull
 
 ### Validating
 
-The skill checks its output by hand unless the `hapax` command from [hapax-tui](https://github.com/claytron/hapax-tui) is installed, in which case it validates against the real rules and fixes what it finds.
-hapax-tui also edits definitions in the terminal.
+The skill checks its output by hand unless the `hapax` command from [hapax-tui](https://github.com/claytron/hapax-tui) is installed, in which case it validates against the real rules and fixes what it finds. hapax-tui also edits definitions in the terminal.

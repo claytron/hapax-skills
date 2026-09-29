@@ -5,10 +5,12 @@ When the manual does not settle a choice, pick the sensible option and say so in
 
 ## What to list
 
-- Every message the instrument **receives**. In a chart with "Transmitted" and "Recognized" columns, use "Recognized"; skip rows marked `X` there.
+- Every message the instrument **receives**.
+  In a chart with "Transmitted" and "Recognized" columns, use "Recognized"; skip rows marked `X` there.
 - List a parameter in `[CC]` when it has a CC, and in `[NRPN]` when it has an NRPN; list it in both when it has both.
 - A 14-bit CC pair ("CC pair 29,61", or MSB on CC n and LSB on CC n+32) goes in `[CC_PAIR]` as `29:61 Flt Cutoff`, not as two `[CC]` entries.
-- List everything. The only limits are the ones in `format.md` (8 pots, 64 automation lanes, 16 drum rows, 128 PCs); never drop entries to fit a limit you assume.
+- List everything.
+  The only limits are the ones in `format.md` (8 pots, 64 automation lanes, 16 drum rows, 128 PCs); never drop entries to fit a limit you assume.
 - Skip channel-mode messages (CC 120–127: All Sound Off, Reset All Controllers, Local Control, All Notes Off, Omni, Mono, Poly) and bank select (CC 0 and 32) unless the instrument uses them for something else.
 - Bank select belongs in `[PC]` as `PC:MSB:LSB` when the manual maps banks to patch names.
 
@@ -30,7 +32,8 @@ When the manual does not settle a choice, pick the sensible option and say so in
 
 - `TYPE DRUM` when the instrument plays separate voices on separate notes (drum machines, samplers in kit mode); `POLY` otherwise.
 - `MPE`, `POLYAT` or `AFTR` only when the manual documents MPE or polyphonic aftertouch.
-- `OUTPORT`, `OUTCHAN`, `INPORT`, `INCHAN` are `NULL` unless the user says how the instrument is connected: `NULL` keeps whatever the track already has. The instrument's factory channel is not a reason to set `OUTCHAN`.
+- `OUTPORT`, `OUTCHAN`, `INPORT`, `INCHAN` are `NULL` unless the user says how the instrument is connected: `NULL` keeps whatever the track already has.
+  The instrument's factory channel is not a reason to set `OUTCHAN`.
 - `TRACKNAME`: the instrument's name, 9 characters or fewer if possible (`Peak`, `TR-8S`, `Matriarch`).
 
 ## Drum lanes
@@ -77,6 +80,7 @@ For the same parameter, prefer the CC pair (`CC_PAIR:29:61`) or 14-bit NRPN when
 ## `[COMMENT]`
 
 - Line 1: the instrument's name.
-- Line 2: `Source: ` and the manual's title and version, as given on its cover.
+- Line 2: `Source:` and the manual's title and version, as given on its cover.
 - Keep it short; setup notes belong in the report, not the file.
-- Only name characters: a `;`, `&`, `%` or `[` in `[COMMENT]` rejects the whole file. Use commas and full stops.
+- Only name characters: a `;`, `&`, `%` or `[` in `[COMMENT]` rejects the whole file.
+  Use commas and full stops.

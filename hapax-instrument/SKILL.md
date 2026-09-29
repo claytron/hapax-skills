@@ -12,10 +12,12 @@ Transcribe exactly; curate with taste; never invent.
 
 ### 1. Find the MIDI chart
 
-- **PDF:** search it for "MIDI Implementation", "Control Change", "CC#", "NRPN", "Parameter List" and read only those pages. Charts are usually in an appendix.
+- **PDF:** search it for "MIDI Implementation", "Control Change", "CC#", "NRPN", "Parameter List" and read only those pages.
+  Charts are usually in an appendix.
 - **URL:** fetch it; if it is a download page, find and fetch the manual PDF.
 - **Images or a scanned chart:** read the images; a table in a picture is still a chart.
-- **No MIDI data found:** say so and stop. Never fill a definition from general knowledge of the instrument.
+- **No MIDI data found:** say so and stop.
+  Never fill a definition from general knowledge of the instrument.
 
 ### 2. Extract
 
