@@ -9,7 +9,14 @@ It targets Hapax OS 3.21 unless you tell it otherwise.
 
 ### Install
 
-**Quick install** — with Node.js installed, the [skills](https://github.com/vercel-labs/skills) CLI installs it into Claude Code and other agents:
+**Claude Code plugin** — add this repository as a marketplace and install the plugin:
+
+```
+/plugin marketplace add claytron/hapax-skills
+/plugin install hapax-skills@hapax-skills
+```
+
+**Other agents** — with Node.js installed, the [skills](https://github.com/vercel-labs/skills) CLI installs it into Claude Code, Cursor, Codex and other agents:
 
 ```sh
 npx skills add claytron/hapax-skills
@@ -25,7 +32,7 @@ git clone https://github.com/claytron/hapax-skills.git ~/src/hapax-skills
 
 ```sh
 mkdir -p ~/.claude/skills
-ln -s ~/src/hapax-skills/hapax-instrument ~/.claude/skills/hapax-instrument
+ln -s ~/src/hapax-skills/skills/hapax-instrument ~/.claude/skills/hapax-instrument
 ```
 
 To install it for one project only, link it into that project's `.claude/skills/` instead.
@@ -33,16 +40,22 @@ To install it for one project only, link it into that project's `.claude/skills/
 **claude.ai and the Claude desktop app** — zip the skill folder and upload it under Settings → Capabilities → Skills:
 
 ```sh
-cd ~/src/hapax-skills && zip -r hapax-instrument.zip hapax-instrument
+cd ~/src/hapax-skills/skills && zip -r ../hapax-instrument.zip hapax-instrument
 ```
 
 Uploads are copies: after `git pull`, zip and upload again to update.
 
-**Other Agent Skills hosts** — install the `hapax-instrument/` folder as a skill; it is a standard `SKILL.md` with a `references/` folder and needs no scripts or dependencies.
+**Other Agent Skills hosts** — install the `skills/hapax-instrument/` folder as a skill; it is a standard `SKILL.md` with a `references/` folder and needs no scripts or dependencies.
 
 ### Update
 
-Quick install:
+Claude Code plugin:
+
+```
+/plugin marketplace update hapax-skills
+```
+
+Other agents:
 
 ```sh
 npx skills update hapax-instrument
@@ -53,6 +66,8 @@ From a clone:
 ```sh
 git -C ~/src/hapax-skills pull
 ```
+
+The skill moved to `skills/hapax-instrument/` on 2026-09-29; if your symlink points at the old `hapax-instrument/` path, re-create it.
 
 ### Use
 
