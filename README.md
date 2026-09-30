@@ -9,24 +9,51 @@ It targets Hapax OS 3.21 unless you tell it otherwise.
 
 ### Install
 
-**Claude Code plugin** — add this repository as a marketplace and install the plugin:
+#### Claude Code plugin
 
-```
+Add this repository as a marketplace and install the plugin:
+
+```text
 /plugin marketplace add claytron/hapax-skills
 /plugin install hapax-skills@hapax-skills
 ```
 
-**Other agents** — with Node.js installed, the [skills](https://github.com/vercel-labs/skills) CLI installs it into Claude Code, Cursor, Codex and other agents:
+To update, then restart Claude Code:
+
+```text
+/plugin marketplace update hapax-skills
+/plugin update hapax-skills@hapax-skills
+```
+
+#### Other agents
+
+With Node.js installed, the [skills](https://github.com/vercel-labs/skills) CLI installs it into Claude Code, Cursor, Codex and other agents:
 
 ```sh
 npx skills add claytron/hapax-skills
 ```
 
-**From a clone** — clone the repository once; every install below points at the clone, so `git pull` updates the skill.
+To update:
+
+```sh
+npx skills update hapax-instrument
+```
+
+#### From a clone
+
+Clone the repository once; every install below points at the clone, so `git pull` updates the skill.
 
 ```sh
 git clone https://github.com/claytron/hapax-skills.git ~/src/hapax-skills
 ```
+
+To update:
+
+```sh
+git -C ~/src/hapax-skills pull
+```
+
+The skill moved to `skills/hapax-instrument/` on 2026-09-29; if your symlink points at the old `hapax-instrument/` path, re-create it.
 
 **Claude Code** — link the skill into your personal skills folder, then restart Claude Code:
 
@@ -46,31 +73,6 @@ cd ~/src/hapax-skills/skills && zip -r ../hapax-instrument.zip hapax-instrument
 Uploads are copies: after `git pull`, zip and upload again to update.
 
 **Other Agent Skills hosts** — install the `skills/hapax-instrument/` folder as a skill; it is a standard `SKILL.md` with a `references/` folder and needs no scripts or dependencies.
-
-### Update
-
-Claude Code plugin:
-
-```
-/plugin marketplace update hapax-skills
-/plugin update hapax-skills@hapax-skills
-```
-
-Restart Claude Code to load the new version.
-
-Other agents:
-
-```sh
-npx skills update hapax-instrument
-```
-
-From a clone:
-
-```sh
-git -C ~/src/hapax-skills pull
-```
-
-The skill moved to `skills/hapax-instrument/` on 2026-09-29; if your symlink points at the old `hapax-instrument/` path, re-create it.
 
 ### Use
 
