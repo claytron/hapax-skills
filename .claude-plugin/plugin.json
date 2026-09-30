@@ -1,0 +1,9 @@
+{
+  "name": "hapax-skills",
+  "description": "AI skills for the Squarp Hapax: generate instrument definitions from synth and drum machine manuals.",
+  "author": {
+    "name": "Clayton Parker",
+    "url": "https://github.com/claytron"
+  },
+  "repository": "https://github.com/claytron/hapax-skills"
+}

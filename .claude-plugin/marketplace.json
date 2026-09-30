@@ -1,0 +1,16 @@
+{
+  "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
+  "name": "hapax-skills",
+  "description": "AI skills for the Squarp Hapax.",
+  "owner": {
+    "name": "Clayton Parker",
+    "url": "https://github.com/claytron"
+  },
+  "plugins": [
+    {
+      "name": "hapax-skills",
+      "description": "Generate Squarp Hapax instrument definitions from synth and drum machine manuals.",
+      "source": "./"
+    }
+  ]
+}
