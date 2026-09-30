@@ -41,7 +41,8 @@ npx skills update hapax-instrument
 
 #### From a clone
 
-Clone the repository once; every install below points at the clone, so `git pull` updates the skill.
+Clone the repository, then install the `skills/hapax-instrument/` folder as a skill in your agent, for example by symlinking it into the agent's skills folder so `git pull` updates it.
+It is a standard `SKILL.md` with a `references/` folder and needs no scripts or dependencies.
 
 ```sh
 git clone https://github.com/claytron/hapax-skills.git ~/src/hapax-skills
@@ -53,26 +54,15 @@ To update:
 git -C ~/src/hapax-skills pull
 ```
 
-The skill moved to `skills/hapax-instrument/` on 2026-09-29; if your symlink points at the old `hapax-instrument/` path, re-create it.
+#### claude.ai and the Claude desktop app
 
-**Claude Code** — link the skill into your personal skills folder, then restart Claude Code:
-
-```sh
-mkdir -p ~/.claude/skills
-ln -s ~/src/hapax-skills/skills/hapax-instrument ~/.claude/skills/hapax-instrument
-```
-
-To install it for one project only, link it into that project's `.claude/skills/` instead.
-
-**claude.ai and the Claude desktop app** — zip the skill folder and upload it under Settings → Capabilities → Skills:
+From a clone, zip the skill folder and upload it under Settings → Capabilities → Skills:
 
 ```sh
 cd ~/src/hapax-skills/skills && zip -r ../hapax-instrument.zip hapax-instrument
 ```
 
 Uploads are copies: after `git pull`, zip and upload again to update.
-
-**Other Agent Skills hosts** — install the `skills/hapax-instrument/` folder as a skill; it is a standard `SKILL.md` with a `references/` folder and needs no scripts or dependencies.
 
 ### Use
 
