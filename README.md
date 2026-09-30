@@ -53,7 +53,10 @@ Claude Code plugin:
 
 ```
 /plugin marketplace update hapax-skills
+/plugin update hapax-skills@hapax-skills
 ```
+
+Restart Claude Code to load the new version.
 
 Other agents:
 
